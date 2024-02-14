@@ -3,9 +3,11 @@ SCALE=$2
 TABLE=$3
 START_CHUNK=$4
 END_CHUNK=$5
-TPCDS_PATH=/home/pch/TPC-DS_Tools_v3.2.0/tools
-SETUP_PATH=/home/pch/TPCDS_setup
-DATA_PATH=/data/pch
+TPCDS_PATH=$6
+SETUP_PATH=$7
+DATA_PATH=$8
+
+export PATH=/usr/local/pgsql/bin:$PATH
 
 cd $DATA_PATH/tpc-ds/data/$SCALE
 
